@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="126a52d9-ac21-49a7-a264-5af0dccd30f0" name="Default" comment="" />
+    <list default="true" id="126a52d9-ac21-49a7-a264-5af0dccd30f0" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/scrape_DGUK_orgs.py" />
+      <change type="MOVED" beforePath="C:\Users\bouchalp\PycharmProjects\SCSgovUK\src\scrape.py" afterPath="$PROJECT_DIR$/src/scrape_govuk.py" />
+      <change type="MOVED" beforePath="C:\Users\bouchalp\PycharmProjects\SCSgovUK\src\scrape_DGUK.py" afterPath="$PROJECT_DIR$/src/scrape_DGUK_data.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/SCSgovUK.iml" afterPath="$PROJECT_DIR$/.idea/SCSgovUK.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="SCSgovUK.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,10 +30,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="scrape_DGUK.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/scrape_DGUK.py">
+      <file leaf-file-name="scrape_DGUK_data.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/scrape_DGUK_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="18" selection-start="181" selection-end="181" vertical-scroll-proportion="0.35714287" vertical-offset="0" max-vertical-offset="585">
+            <state line="9" column="0" selection-start="129" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="663">
               <folding>
                 <element signature="e#28#42#0" expanded="true" />
               </folding>
@@ -34,12 +41,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scrape.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/scrape.py">
+      <file leaf-file-name="scrape_DGUK_orgs.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/scrape_DGUK_orgs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="26" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+            <state line="26" column="35" selection-start="608" selection-end="608" vertical-scroll-proportion="0.62606233" vertical-offset="0" max-vertical-offset="706">
               <folding>
-                <element signature="e#28#41#0" expanded="true" />
+                <element signature="e#25#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -61,7 +68,7 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/scrape_DGUK.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/scrape_DGUK_data.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -74,14 +81,15 @@
         <option value="$PROJECT_DIR$/scape_DGUK.py" />
         <option value="$PROJECT_DIR$/src/scape_DGUK.py" />
         <option value="$PROJECT_DIR$/src/scrape_DGUK.py" />
+        <option value="$PROJECT_DIR$/src/scrape_DGUK_orgs.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-2" />
-    <option name="y" value="22" />
-    <option name="width" value="1280" />
-    <option name="height" value="774" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1696" />
+    <option name="height" value="1066" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -137,10 +145,13 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="options.lastSelected" value="settings.github" />
+    <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
-    <property name="restartRequiresConfirmation" value="true" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
     <property name="last_opened_file_path" value="$USER_HOME$/github/local/ElectionsCZ/src/Kraje_CandDistrict.py" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -152,7 +163,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.scape_DGUK">
+  <component name="RunManager" selected="Python.scrape_DGUK_orgs">
     <configuration default="false" name="scrape" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -165,7 +176,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="SCSgovUK" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/scrape.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\bouchalp\PycharmProjects\SCSgovUK\src\scrape_govuk.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -221,7 +232,25 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="SCSgovUK" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/scrape_DGUK.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\bouchalp\PycharmProjects\SCSgovUK\src\scrape_DGUK_data.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="scrape_DGUK_orgs" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SCSgovUK" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/scrape_DGUK_orgs.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -348,18 +377,20 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.scrape" />
       <item index="1" class="java.lang.String" itemvalue="Python.blah test" />
       <item index="2" class="java.lang.String" itemvalue="Python.bb" />
       <item index="3" class="java.lang.String" itemvalue="Python.scape_DGUK" />
+      <item index="4" class="java.lang.String" itemvalue="Python.scrape_DGUK_orgs" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.scape_DGUK" />
-        <item index="1" class="java.lang.String" itemvalue="Python.scrape" />
-        <item index="2" class="java.lang.String" itemvalue="Python.blah test" />
-        <item index="3" class="java.lang.String" itemvalue="Python.bb" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.scrape_DGUK_orgs" />
+        <item index="1" class="java.lang.String" itemvalue="Python.scape_DGUK" />
+        <item index="2" class="java.lang.String" itemvalue="Python.scrape" />
+        <item index="3" class="java.lang.String" itemvalue="Python.blah test" />
+        <item index="4" class="java.lang.String" itemvalue="Python.bb" />
       </list>
     </recent_temporary>
   </component>
@@ -390,18 +421,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="22" width="1280" height="774" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1696" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34117648" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3411215" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24980111" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24980111" sideWeight="0.65882355" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1875" sideWeight="0.7837259" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3177305" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3177305" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31464174" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21627408" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -424,47 +455,39 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/scrape.py">
+    <entry file="file://$PROJECT_DIR$/src/scrape_DGUK_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="18" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="663">
+          <folding>
+            <element signature="e#28#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scrape_govuk.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="26" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="493">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scrape_govuk.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="26" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="435">
-          <folding>
-            <element signature="e#28#41#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scrape.py">
+    <entry file="file://$PROJECT_DIR$/src/scrape_govuk.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="26" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="435">
-          <folding>
-            <element signature="e#28#41#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/github/local/MonitorMFCR/src/Monitor_scrape.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="183" column="18" selection-start="7120" selection-end="7120" vertical-scroll-proportion="-3.14554" vertical-offset="4665" max-vertical-offset="5670" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/github/local/GovBusinessPlans/src/BusinessPlans.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="32" selection-start="958" selection-end="958" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8625" />
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.2/lib/python3.2/encodings/ascii.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="633" selection-end="633" vertical-scroll-proportion="0.2868098" vertical-offset="188" max-vertical-offset="840" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/blah.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/github/local/ElectionsCZ/src/Kraje_CandDistrict.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="44" selection-start="325" selection-end="325" vertical-scroll-proportion="0.5421687" vertical-offset="0" max-vertical-offset="1620" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/bb.py">
@@ -477,20 +500,27 @@
         <state line="7" column="31" selection-start="150" selection-end="150" vertical-scroll-proportion="0.2453271" vertical-offset="0" max-vertical-offset="428" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scrape.py">
+    <entry file="file://$PROJECT_DIR$/src/scrape_govuk.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="26" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+        <state line="10" column="26" selection-start="214" selection-end="214" vertical-scroll-proportion="0.21791768" vertical-offset="46" max-vertical-offset="459">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scrape_DGUK_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="129" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="663">
           <folding>
-            <element signature="e#28#41#0" expanded="true" />
+            <element signature="e#28#42#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scrape_DGUK.py">
+    <entry file="file://$PROJECT_DIR$/src/scrape_DGUK_orgs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="18" selection-start="181" selection-end="181" vertical-scroll-proportion="0.35714287" vertical-offset="0" max-vertical-offset="585">
+        <state line="26" column="35" selection-start="608" selection-end="608" vertical-scroll-proportion="0.62606233" vertical-offset="0" max-vertical-offset="706">
           <folding>
-            <element signature="e#28#42#0" expanded="true" />
+            <element signature="e#25#39#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="126a52d9-ac21-49a7-a264-5af0dccd30f0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/scrape_DGUK_orgs.py" />
-      <change type="MOVED" beforePath="C:\Users\bouchalp\PycharmProjects\SCSgovUK\src\scrape.py" afterPath="$PROJECT_DIR$/src/scrape_govuk.py" />
-      <change type="MOVED" beforePath="C:\Users\bouchalp\PycharmProjects\SCSgovUK\src\scrape_DGUK.py" afterPath="$PROJECT_DIR$/src/scrape_DGUK_data.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/SCSgovUK.iml" afterPath="$PROJECT_DIR$/.idea/SCSgovUK.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib_DGUK.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scrape_DGUK_orgs.py" afterPath="$PROJECT_DIR$/src/scrape_DGUK_orgs.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SCSgovUK.iws" />
@@ -33,10 +30,8 @@
       <file leaf-file-name="scrape_DGUK_data.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scrape_DGUK_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="129" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="663">
-              <folding>
-                <element signature="e#28#42#0" expanded="true" />
-              </folding>
+            <state line="9" column="0" selection-start="129" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="646">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -44,10 +39,19 @@
       <file leaf-file-name="scrape_DGUK_orgs.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/scrape_DGUK_orgs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="35" selection-start="608" selection-end="608" vertical-scroll-proportion="0.62606233" vertical-offset="0" max-vertical-offset="706">
+            <state line="28" column="0" selection-start="648" selection-end="648" vertical-scroll-proportion="0.7394636" vertical-offset="90" max-vertical-offset="612">
               <folding>
                 <element signature="e#25#39#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lib_DGUK.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lib_DGUK.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="19" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -81,7 +85,9 @@
         <option value="$PROJECT_DIR$/scape_DGUK.py" />
         <option value="$PROJECT_DIR$/src/scape_DGUK.py" />
         <option value="$PROJECT_DIR$/src/scrape_DGUK.py" />
+        <option value="$PROJECT_DIR$/src/lib/lib_DGUK.py" />
         <option value="$PROJECT_DIR$/src/scrape_DGUK_orgs.py" />
+        <option value="$PROJECT_DIR$/src/lib_DGUK.py" />
       </list>
     </option>
   </component>
@@ -140,18 +146,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SCSgovUK" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SCSgovUK" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
-    <property name="last_opened_file_path" value="$USER_HOME$/github/local/ElectionsCZ/src/Kraje_CandDistrict.py" />
+    <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="options.searchVisible" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/github/local/ElectionsCZ/src/Kraje_CandDistrict.py" />
+    <property name="FullScreen" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -160,6 +177,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\bouchalp\PycharmProjects\SCSgovUK\src" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
@@ -252,7 +270,9 @@
       <module name="SCSgovUK" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/scrape_DGUK_orgs.py" />
       <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
@@ -418,26 +438,52 @@
       <created>1389395450004</created>
       <updated>1389395450004</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial code for downloading list of organisations">
+      <created>1390218650073</created>
+      <updated>1390218650073</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1066" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3411215" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930845" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3402854" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930845" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24980111" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1875" sideWeight="0.7837259" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31464174" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21627408" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19010259" sideWeight="0.60153675" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39846322" sideWeight="0.49969825" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19010259" sideWeight="0.273326" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39846322" sideWeight="0.5003018" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21624589" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930845" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -450,39 +496,66 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="Initial code for downloading list of organisations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial code for downloading list of organisations" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/src/scrape_DGUK_orgs.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/src/lib_DGUK.py</url>
+          <line>6</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="9" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/scrape_DGUK_data.py">
+    <entry file="file://$PROJECT_DIR$/src/scrape_DGUK_orgs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="18" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="663">
+        <state line="11" column="0" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="578">
           <folding>
-            <element signature="e#28#42#0" expanded="true" />
+            <element signature="e#25#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scrape_govuk.py">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="26" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="493">
+        <state line="1142" column="0" selection-start="47510" selection-end="47510" vertical-scroll-proportion="0.0" vertical-offset="19414" max-vertical-offset="26146">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scrape_DGUK_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="18" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="663">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scrape_govuk.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="26" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="435">
-          <folding />
-        </state>
+        <state line="10" column="26" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="493" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scrape_govuk.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="26" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="435">
-          <folding />
-        </state>
+        <state line="10" column="26" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="435" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scrape_govuk.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="26" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="435" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/blah.csv">
@@ -502,7 +575,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scrape_govuk.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="26" selection-start="214" selection-end="214" vertical-scroll-proportion="0.21791768" vertical-offset="46" max-vertical-offset="459">
+        <state line="10" column="26" selection-start="214" selection-end="214" vertical-scroll-proportion="0.21791768" vertical-offset="46" max-vertical-offset="459" />
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1142" column="0" selection-start="47510" selection-end="47510" vertical-scroll-proportion="0.0" vertical-offset="18118" max-vertical-offset="25024">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/urllib2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="399" column="0" selection-start="13165" selection-end="13165" vertical-scroll-proportion="0.0" vertical-offset="6405" max-vertical-offset="24769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/httplib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="370" column="0" selection-start="12265" selection-end="12265" vertical-scroll-proportion="0.33333334" vertical-offset="6031" max-vertical-offset="22576">
           <folding />
         </state>
       </provider>
@@ -510,15 +602,20 @@
     <entry file="file://$PROJECT_DIR$/src/scrape_DGUK_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="0" selection-start="129" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="663">
-          <folding>
-            <element signature="e#28#42#0" expanded="true" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib_DGUK.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="19" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scrape_DGUK_orgs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="35" selection-start="608" selection-end="608" vertical-scroll-proportion="0.62606233" vertical-offset="0" max-vertical-offset="706">
+        <state line="28" column="0" selection-start="648" selection-end="648" vertical-scroll-proportion="0.7394636" vertical-offset="90" max-vertical-offset="612">
           <folding>
             <element signature="e#25#39#0" expanded="true" />
           </folding>

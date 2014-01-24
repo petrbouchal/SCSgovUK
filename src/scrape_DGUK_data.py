@@ -1,21 +1,24 @@
 __author__ = 'petrbouchal'
 
-import urllib2
-import json
+from lib_DGUK import SavePretty,DGUKopenAndParse, WriteDict
 
-apibase = 'http://data.gov.uk/api/3'
 limit=1000
 searchterm='organogram'
 
-action = '/action/package_search'
-query = apibase + action + '?q=' + searchterm + '&rows=' + str(limit)
-print(query)
+action = 'package_search'
+apidata = {'rows':limit,'q':searchterm}
 
-data = urllib2.urlopen(query).read()
-jdata=json.loads(data)
+allpackages = DGUKopenAndParse(action,apidata)
+
+packagerows = []
+resrows = []
+
+packfile=open('/output/','w+')
+resfile=open('/output/','w+')
 
 rescount = csvcount = nodatecount = xlscount = 0
-for dgpack in jdata['result']['results']:
+for dgpack in allpackages['results']:
+    SavePretty(dgpack)
     for dgres in dgpack['resources']:
         # pprint(dgres)
         # print dgres['date']

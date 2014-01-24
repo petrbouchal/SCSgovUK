@@ -1,30 +1,37 @@
 __author__ = 'bouchalp'
 
-import urllib2
-import json
-from pprint import pprint
-from lib_DGUK import SavePretty
+from lib_DGUK import SavePretty, DGUKopenAndParse, WriteDict
 
-apibase = 'http://data.gov.uk/api/3'
 limit = 1000
+apidata = {'all_fields':'true','rows':limit}
 
-searchterm = ''
+action = 'organization_list'
+allorgs=DGUKopenAndParse(action,apidata)
 
-action = '/action/organization_list?all_fields=true'
-query = apibase + action + '&rows=' + str(limit)
-print(query)
+orgrows = []
 
-data = urllib2.urlopen(query).read()
-jdata = json.loads(data)
-pprint(jdata['result'])
+iternum = 0
+for org in allorgs:
+    orgaction = 'organization_show'
+    orgapidata = {'id':org['id']}
+    odata = DGUKopenAndParse(orgaction,orgapidata)
+    print(odata['title'])
+    SavePretty(odata,'orgjson/org_'+odata['name'])
+    try: orgcat=odata['category']
+    except (KeyError,IndexError): orgcat='None'
+    try: orggroupname=odata['groups'][0]['name']
+    except (KeyError,IndexError): orggroupname='None'
+    try: orggroupcapacity=odata['groups'][0]['capacity']
+    except (KeyError, IndexError): orggroupcapacity='None'
+    orgrow = {'id':odata['id'],
+              'name':odata['name'],
+              'category':orgcat,
+              'title':odata['title'],
+              'group':orggroupname,
+              'capacity':orggroupcapacity,
+              'type':odata['type']}
+    iternum +=1
+    # if iternum == 2: break
+    orgrows.append(orgrow)
 
-orgaction = '/action/organization_show'
-
-for org in jdata['result']:
-    orgquery = apibase + orgaction + '?id=' + org['id']
-    print(orgquery)
-    orgdata = urllib2.urlopen(orgquery).read()
-    jorgdata = json.loads(orgdata)
-    print(jorgdata['result']['title'])
-    SavePretty(jorgdata,'output/'+'org_'+jorgdata['result']['name']+'.json')
-
+WriteDict('../output/orgdata.csv',orgrows)

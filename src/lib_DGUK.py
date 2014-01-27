@@ -16,9 +16,8 @@ def DGUKopenAndParse(apiaction,apidata):
     import json
     apibase = 'http://data.gov.uk/api/3/'
     data_string = urllib.quote(json.dumps(apidata))
-    rawdata = urllib2.urlopen(apibase+'/action/'+apiaction,data_string)
+    rawdata = urllib2.urlopen(apibase+'action/'+apiaction,data_string)
     # print apibase+'/action/'+apiaction+data_string
-    assert rawdata.code==200
     result = json.loads(rawdata.read())['result']
     return result
 
@@ -29,7 +28,6 @@ def WriteDict(filepath,listofdicts):
     @param filepath:
     @param listofdicts: list of dictionaries
     """
-    global orgfile, orgwriter
     import csv
     orgfile = open(filepath, 'w+')
     orgwriter = csv.DictWriter(orgfile, fieldnames=listofdicts[0].keys())

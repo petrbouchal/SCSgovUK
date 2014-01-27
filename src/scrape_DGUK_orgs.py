@@ -1,12 +1,19 @@
 __author__ = 'bouchalp'
 
 from lib_DGUK import SavePretty, DGUKopenAndParse, WriteDict
+from datetime import datetime
+import os
 
+filedatestringlong = datetime.strftime(datetime.now(), '%Y%m%d_%H%M%S')
+
+action = 'organization_list'
 limit = 1000
 apidata = {'all_fields':'true','rows':limit}
 
-action = 'organization_list'
 allorgs=DGUKopenAndParse(action,apidata)
+
+rawdir = '../output/orgsjson/orgsjson_' + filedatestringlong
+os.makedirs(rawdir)
 
 orgrows = []
 
@@ -16,7 +23,7 @@ for org in allorgs:
     orgapidata = {'id':org['id']}
     odata = DGUKopenAndParse(orgaction,orgapidata)
     print(odata['title'])
-    SavePretty(odata,'orgjson/org_'+odata['name'])
+    SavePretty(odata,rawdir+'/org_'+odata['name'])
     try: orgcat=odata['category']
     except (KeyError,IndexError): orgcat='None'
     try: orggroupname=odata['groups'][0]['name']
@@ -34,4 +41,4 @@ for org in allorgs:
     # if iternum == 2: break
     orgrows.append(orgrow)
 
-WriteDict('../output/orgdata.csv',orgrows)
+WriteDict('../output/orgdata_'+filedatestringlong+'.csv',orgrows)

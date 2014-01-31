@@ -2,6 +2,7 @@ __author__ = 'petrbouchal'
 
 from lib_DGUK import SavePretty,DGUKopenAndParse, WriteDict
 import os
+import urllib
 from datetime import datetime
 
 filedatestringlong = datetime.strftime(datetime.now(), '%Y%m%d_%H%M%S')
@@ -12,7 +13,7 @@ for i in dirstems:
     os.makedirs(rawdir)
 
 
-limit=1000
+limit=10
 searchterm='organogram'
 
 action = 'package_search'
@@ -23,8 +24,8 @@ allpackages = DGUKopenAndParse(action,apidata)
 packagerows = []
 resourcerows = []
 
-packagefile='../output/packages_'+filedatestringlong + '.csv', 'w+'
-resourcefile='../output/resources_'+filedatestringlong + '.csv', 'w+'
+packagefile='../output/packages_'+filedatestringlong + '.csv'
+resourcefile='../output/resources_'+filedatestringlong + '.csv'
 
 rescount = csvcount = nodatecount = xlscount = 0
 for dgpack in allpackages['results']:
@@ -76,6 +77,10 @@ for dgpack in allpackages['results']:
         if dgres['format'].lower()=='csv': csvcount += 1
         if dgres['format'].lower()=='xls': xlscount += 1
         resourcerows.append(resourcerow)
+        savepath = 'resourcesjson/resourcesjson_'+filedatestringlong+'/' + \
+                   dgres+ '__' + dgresdata[''] + '.' + dgresdata['format']
+        urllib.urlretrieve(dgres['url'],savepath)
+
 
 WriteDict(packagefile,packagerows)
 WriteDict(resourcefile,resourcerows)

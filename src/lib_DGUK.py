@@ -21,6 +21,20 @@ def DGUKopenAndParse(apiaction,apidata):
     result = json.loads(rawdata.read())['result']
     return result
 
+def GovUkOpenAndParse(baseurl,querydata):
+    'Returns parsed result from API call'
+    import urllib
+    import urllib2
+    from bs4 import BeautifulSoup
+    try:
+        data_string = urllib.urlencode(querydata)
+        rawdata = urllib2.urlopen(baseurl+'?'+data_string)
+    except Exception:
+        rawdata = urllib2.urlopen(baseurl)
+    data = rawdata.read()
+    result = BeautifulSoup(data)
+    return result
+
 def WriteDict(filepath,listofdicts):
     """
     Writes dictionary to file in filepath
@@ -29,8 +43,12 @@ def WriteDict(filepath,listofdicts):
     @param listofdicts: list of dictionaries
     """
     import csv
-    orgfile = open(filepath, 'w+')
-    orgwriter = csv.DictWriter(orgfile, fieldnames=listofdicts[0].keys())
-    orgwriter.writeheader()
-    orgwriter.writerows(listofdicts)
-    orgfile.close()
+    try:
+        orgfile = open(filepath, 'w+')
+        orgwriter = csv.DictWriter(orgfile, fieldnames=listofdicts[0].keys())
+        orgwriter.writeheader()
+        orgwriter.writerows(listofdicts)
+        orgfile.close()
+        return True
+    except Exception:
+        return False

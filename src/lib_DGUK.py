@@ -8,6 +8,16 @@ def SavePretty(JSONobject,filename):
     filepath = outputfolder + filename + '.json'
     dataconn=open(filepath,'w+')
     pprint(JSONobject,dataconn)
+    dataconn.close()
+
+def SaveFile(url,filename, fileext):
+    import urllib2
+    filepath = outputfolder + filename + '.' + fileext
+    data = urllib2.urlopen(url)
+    dataread = data.read()
+    dataconn = open(filepath,'w+')
+    dataconn.write(dataread)
+    dataconn.close()
 
 def DGUKopenAndParse(apiaction,apidata):
     'Returns parsed result from API call'

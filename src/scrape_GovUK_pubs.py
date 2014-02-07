@@ -1,14 +1,23 @@
 __author__ = 'petrbouchal'
 
-from lib_DGUK import GovUkOpenAndParse
+from lib_DGUK import GovUkOpenAndParse, SaveFile
 from bs4 import BeautifulSoup
 import re
+from datetime import datetime
+import os
 
+filedatestringlong = datetime.strftime(datetime.now(), '%Y%m%d_%H%M%S')
 pubsurl = 'http://www.gov.uk/government/publications'
 govukurl = 'http://www.gov.uk'
-searchdata = {"keywords": "organogram OR \"staff data\"", "publication_filter_option": "all", "departments[]": "all",
+
+searchterm = "organogram OR \"staff data\""
+
+searchdata = {"keywords": searchterm, "publication_filter_option": "all", "departments[]": "all",
               "topics[]": "all", "from_date": "", "to_date": "", 'official_document_status': 'all',
               'world_locations[]': 'all'}
+
+pubdatadir = '../output/govukpubfiles/' + filedatestringlong
+os.makedirs(pubdatadir)
 
 soup = GovUkOpenAndParse(pubsurl, searchdata)
 
@@ -46,3 +55,5 @@ for page in pages:
                 fileurl = pubfile.h2.contents[0]['href']
             print('File: '+filetitle)
             print('URL for file download: ' + govukurl + fileurl)
+            filedatestringlong_current = datetime.strftime(datetime.now(), '%Y%m%d_%H%M%S%f')
+            SaveFile(govukurl+fileurl,pubdatadir+'/'+'xxx'+'_'+filedatestringlong_current,'csv')

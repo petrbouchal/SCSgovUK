@@ -42,7 +42,7 @@ def GovUkOpenAndParse(baseurl,querydata):
     except Exception:
         rawdata = urllib2.urlopen(baseurl)
     data = rawdata.read()
-    result = BeautifulSoup(data)
+    result = BeautifulSoup(data,'lxml')
     return result
 
 def WriteDict(filepath,listofdicts):

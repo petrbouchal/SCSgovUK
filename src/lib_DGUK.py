@@ -53,12 +53,9 @@ def WriteDict(filepath,listofdicts):
     @param listofdicts: list of dictionaries
     """
     import csv
-    try:
-        orgfile = open(filepath, 'w+')
+    with open(filepath, 'w+') as orgfile:
         orgwriter = csv.DictWriter(orgfile, fieldnames=listofdicts[0].keys())
         orgwriter.writeheader()
         orgwriter.writerows(listofdicts)
-        orgfile.close()
-        return True
-    except Exception:
-        return False
+    result = True
+    return result

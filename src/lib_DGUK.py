@@ -17,12 +17,16 @@ def SaveFile(url,filename, fileext):
     filepath = outputfolder + filename + '.' + fileext
     try:
         data = urllib2.urlopen(url)
-    except HTTPError:
-        print ('HTTP Error, trying again...')
+    except HTTPError,e:
+        print ('HTTP Error')
+        print(e)
+        print('Trying again in 10 seconds...')
         sleep(10)
         try:
             data = urllib2.urlopen(url)
-        except HTTPError:
+        except HTTPError, e:
+            print('Failed - HTTP Error')
+            print(e)
             raise
     dataread = data.read()
     dataconn = open(filepath,'w+')
@@ -46,12 +50,37 @@ def GovUkOpenAndParse(baseurl,querydata):
     'Returns parsed result from API call'
     import urllib
     import urllib2
+    from time import sleep
     from bs4 import BeautifulSoup
     try:
         data_string = urllib.urlencode(querydata)
-        rawdata = urllib2.urlopen(baseurl+'?'+data_string)
-    except Exception:
-        rawdata = urllib2.urlopen(baseurl)
+        try:
+            rawdata = urllib2.urlopen(baseurl+'?'+data_string)
+        except urllib2.HTTPError,e:
+            print('HTTP Error')
+            print(e)
+            print('Trying again in 10 seconds')
+            sleep(10)
+            try:
+                rawdata = urllib2.urlopen(baseurl+'?'+data_string)
+            except urllib2.HTTPError,e:
+                print('Failed - HTTP Error')
+                print(e)
+                raise
+    except TypeError:
+        try:
+            rawdata = urllib2.urlopen(baseurl)
+        except urllib2.HTTPError,e:
+            print('HTTP Error')
+            print(e)
+            print('Trying again in 10 seconds')
+            sleep(10)
+            try:
+                rawdata = urllib2.urlopen(baseurl)
+            except urllib2.HTTPError,e:
+                print('Failed - HTTP Error')
+                print(e)
+                raise
     data = rawdata.read()
     result = BeautifulSoup(data,'lxml')
     return result

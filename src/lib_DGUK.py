@@ -17,6 +17,7 @@ def SaveFile(url,filename, fileext):
     dataread = data.read()
     dataconn = open(filepath,'w+')
     dataconn.write(dataread)
+    dataconn.flush()
     dataconn.close()
 
 def DGUKopenAndParse(apiaction,apidata):

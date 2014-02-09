@@ -28,7 +28,7 @@ runsnum = int(rescountnum) / 40 + 1
 
 pagecounter = 1
 pages = []
-runsnum=1
+# runsnum=1
 while pagecounter <= runsnum:
     searchdata['page'] = pagecounter
     pagecounter += 1
@@ -37,12 +37,9 @@ while pagecounter <= runsnum:
 
 print('Number of pages of results to process: ' + str(len(pages)))
 
-pubpagerows = []
-pubfilerows = []
-pubfilecounter = 0
+pubpagerows = pubfilerows = []
 
-pubcounter = 0
-filecounter = 0
+pubcounter = filecoutner = pubfilecounter = 0
 pagecounter = 1
 time_start = time.time()
 itemstodo = len(pages)*40

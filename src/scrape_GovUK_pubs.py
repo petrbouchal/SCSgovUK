@@ -109,7 +109,7 @@ for pagecounter in range(1,runsnum):
             pubfilecounter += 1
         pubcounter += 1
         if pubcounter%10==0:
-            print('Roughly ' + '{0:.0f}%'.format(pubcounter/float(itemstodo)*100)+' done. ',)
+            print('Roughly ' + '{0:.0f}%'.format(pubcounter/float(itemstodo)*100)+' done. '),
             time_elapsed = time.time() - time_start
             print('ETA in ' + '{0:.0f}'.format(float(time_elapsed)/float(pubcounter)*itemstodo-time_elapsed) + ' seconds')
     pagecounter +=1

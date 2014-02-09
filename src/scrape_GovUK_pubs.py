@@ -23,12 +23,12 @@ soup = GovUkOpenAndParse(pubsurl, searchdata)
 
 rescount = soup.find('span', {'class': 'count'}).contents[0]
 print('Total results - publications: ' + rescount)
-rescountnum = re.sub(',', '', rescount)
-runsnum = int(rescountnum) / 40 + 1
+rescountnum = int(re.sub(',', '', rescount))
+runsnum = rescountnum / 40 + 1
 
 pagecounter = 1
 pages = []
-# runsnum=1
+# runsnum=1 # for testing purpose
 while pagecounter <= runsnum:
     searchdata['page'] = pagecounter
     pagecounter += 1
@@ -37,9 +37,11 @@ while pagecounter <= runsnum:
 
 print('Number of pages of results to process: ' + str(len(pages)))
 
-pubpagerows = pubfilerows = []
+pubpagerows = []
+pubfilerows = []
 
-pubcounter = filecoutner = pubfilecounter = 0
+pubcounter = 0
+pubfilecounter = 0
 pagecounter = 1
 time_start = time.time()
 itemstodo = len(pages)*40
@@ -53,11 +55,12 @@ for page in pages:
         puburl = govukurl + i.h3.a['href']
         # print('Going to ' + puburl)
         pubsoup = GovUkOpenAndParse(govukurl + i.h3.a['href'], '')
-        puborg = pubsoup.find('span', {'class': 'organisation lead'}).a.contents[0]
+        puborg = pubsoup.find('span', {'class': 'organisation lead'}).a.contents[0].encode('ascii','ignore')
         pubdecription = pubsoup.find('div', {'class': 'summary'}).p.contents[0].encode('ascii','ignore')
         pubfiles = pubsoup.find_all('div', {'class': 'attachment-details'})
-        pubrow = {'puburl': puburl, 'pubdescription': pubdecription, 'pubtitle': pubtitle, 'puborg': puborg}
-        pubpagerows.append(pubrow)
+        pubpagerow = {}
+        pubpagerow = {'puburl': puburl, 'pubdescription': pubdecription, 'pubtitle': pubtitle, 'puborg': puborg}
+        pubpagerows.append(pubpagerow)
         for pubfile in pubfiles:
             try:
                 filetitle = pubfile.h2.contents[0].encode('ascii','ignore')
@@ -84,6 +87,7 @@ for page in pages:
             filedatestringlong_current = datetime.strftime(datetime.now(), '%Y%m%d_%H%M%S%f')
             pubfilename = puborg + '_' + str(pubfilecounter)
             SaveFile(govukurl + fileurl, pubdatadir + '/' + pubfilename, ext)
+            pubfilerow = {}
             pubfilerow = {'url': pubfileurl, 'saved-as': pubfilename, 'filetitle': filetitle, 'extension': ext,
                           'marked-as-csv': csvlabel, 'puburl': puburl}
             pubfilerows.append(pubfilerow)

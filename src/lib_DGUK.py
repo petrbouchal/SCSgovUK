@@ -12,8 +12,18 @@ def SavePretty(JSONobject,filename):
 
 def SaveFile(url,filename, fileext):
     import urllib2
+    from time import sleep
+    from urllib2 import HTTPError
     filepath = outputfolder + filename + '.' + fileext
-    data = urllib2.urlopen(url)
+    try:
+        data = urllib2.urlopen(url)
+    except HTTPError:
+        print ('HTTP Error, trying again...')
+        sleep(10)
+        try:
+            data = urllib2.urlopen(url)
+        except HTTPError:
+            raise
     dataread = data.read()
     dataconn = open(filepath,'w+')
     dataconn.write(dataread)

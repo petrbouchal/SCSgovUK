@@ -70,6 +70,7 @@ for page in pages:
             except Exception:
                 filetitle = pubfile.h2.contents[0].contents[0].encode('ascii','ignore')
                 fileurl = pubfile.h2.contents[0]['href']
+                csvlabel = False
             try:
                 ext = re.search(r'[a-zA-z]{3}$', fileurl).group(0)
                 csvext = re.search(r'[a-zA-z]{3}$', fileurl).group(0) == 'csv'
@@ -88,10 +89,10 @@ for page in pages:
             pubfilerows.append(pubfilerow)
             pubfilecounter += 1
         pubcounter += 1
-        if pubcounter%5==0:
-            print('\nRoughly ' + str(float(pubcounter)/float(itemstodo)*100)+'% done.\n')
+        if pubcounter%10==0:
+            print('\nRoughly ' + '{0:.0f}%'.format(pubcounter/float(itemstodo)*100)+' done.\n')
             time_elapsed = time.time() - time_start
-            print('ETA in ' + str(float(time_elapsed)/float(pubcounter)*itemstodo-time_elapsed) + 's')
+            print('ETA in ' + '{0:.0f}'.format(float(time_elapsed)/float(pubcounter)*itemstodo-time_elapsed) + ' seconds')
     pagecounter +=1
 
 WriteDict('../output/pubpages_' + filedatestringlong + '.csv', pubpagerows)

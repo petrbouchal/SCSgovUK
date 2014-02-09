@@ -5,12 +5,18 @@ import re
 import time
 from datetime import datetime
 import os
+import sys
 
 filedatestringlong = datetime.strftime(datetime.now(), '%Y%m%d_%H%M%S')
 pubsurl = 'http://www.gov.uk/government/publications'
 govukurl = 'http://www.gov.uk'
 
-searchterm = "organogram"
+if len(sys.argv) > 1:
+    searchterm = sys.argv[1]
+else:
+    searchterm = "organogram salaries"
+
+print("Searching for: " + searchterm)
 
 searchdata = {"keywords": searchterm, "publication_filter_option": "all", "departments[]": "all",
               "topics[]": "all", "from_date": "", "to_date": "", 'official_document_status': 'all',

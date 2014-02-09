@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="126a52d9-ac21-49a7-a264-5af0dccd30f0" name="Default" comment="Adding progress counter">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib_DGUK.py" afterPath="$PROJECT_DIR$/src/lib_DGUK.py" />
+    <list default="true" id="126a52d9-ac21-49a7-a264-5af0dccd30f0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scrape_GovUK_pubs.py" afterPath="$PROJECT_DIR$/src/scrape_GovUK_pubs.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -27,19 +26,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="lib_DGUK.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/lib_DGUK.py">
+      <file leaf-file-name="scrape_GovUK_pubs.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/scrape_GovUK_pubs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="31" selection-start="657" selection-end="657" vertical-scroll-proportion="0.5259146" vertical-offset="0" max-vertical-offset="1005">
+            <state line="12" column="24" selection-start="333" selection-end="333" vertical-scroll-proportion="0.18292683" vertical-offset="0" max-vertical-offset="1530">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scrape_GovUK_pubs.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/scrape_GovUK_pubs.py">
+      <file leaf-file-name="lib_DGUK.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lib_DGUK.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="99" column="64" selection-start="4340" selection-end="4340" vertical-scroll-proportion="0.0" vertical-offset="754" max-vertical-offset="1530">
+            <state line="23" column="31" selection-start="657" selection-end="657" vertical-scroll-proportion="0.0" vertical-offset="328" max-vertical-offset="1005">
               <folding />
             </state>
           </provider>
@@ -114,6 +113,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -170,7 +170,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -498,7 +497,11 @@
       <created>1391857014455</created>
       <updated>1391857014456</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Minor edits to gov.uk downloader">
+      <created>1391971025805</created>
+      <updated>1391971025805</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -531,18 +534,18 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2494043" sideWeight="0.785061" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18903892" sideWeight="0.53801167" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39442816" sideWeight="0.49969825" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18903892" sideWeight="0.46052632" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18903892" sideWeight="0.4619883" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39846322" sideWeight="0.5003018" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.271261" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -560,9 +563,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24980111" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1893397" sideWeight="0.60365856" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21493903" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21493903" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -584,7 +587,8 @@
     <MESSAGE value="Complete code for saving files from gov.uk based on search term" />
     <MESSAGE value="Debugging - adjustment for unicode in gov.uk download metadata" />
     <MESSAGE value="Adding progress counter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding progress counter" />
+    <MESSAGE value="Minor edits to gov.uk downloader" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor edits to gov.uk downloader" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -613,6 +617,20 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/scrape_GovUK_pubs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="99" column="64" selection-start="4340" selection-end="4340" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1590">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib_DGUK.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="31" selection-start="657" selection-end="657" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1005">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/lib_DGUK.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="20" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0" vertical-offset="93" max-vertical-offset="1005">
@@ -891,16 +909,16 @@
         <state line="153" column="0" selection-start="4922" selection-end="4922" vertical-scroll-proportion="0.33333334" vertical-offset="2061" max-vertical-offset="6750" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scrape_GovUK_pubs.py">
+    <entry file="file://$PROJECT_DIR$/src/lib_DGUK.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="64" selection-start="4340" selection-end="4340" vertical-scroll-proportion="0.0" vertical-offset="754" max-vertical-offset="1530">
+        <state line="23" column="31" selection-start="657" selection-end="657" vertical-scroll-proportion="0.0" vertical-offset="328" max-vertical-offset="1005">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib_DGUK.py">
+    <entry file="file://$PROJECT_DIR$/src/scrape_GovUK_pubs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="31" selection-start="657" selection-end="657" vertical-scroll-proportion="0.5259146" vertical-offset="0" max-vertical-offset="1005">
+        <state line="12" column="24" selection-start="333" selection-end="333" vertical-scroll-proportion="0.18292683" vertical-offset="0" max-vertical-offset="1530">
           <folding />
         </state>
       </provider>

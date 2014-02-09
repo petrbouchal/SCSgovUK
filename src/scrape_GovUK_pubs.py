@@ -39,16 +39,8 @@ rescountnum = int(re.sub(',', '', rescount))
 runsnum = rescountnum / 40 + 1
 
 # loop through pages and put them into a dictionary
-pagecounter = 1
-pages = []
-# runsnum=1 # for testing purpose
-while pagecounter <= runsnum:
-    searchdata['page'] = pagecounter
-    pagecounter += 1
-    pagesoup = GovUkOpenAndParse(pubsurl, searchdata)
-    pages.append(pagesoup)
 
-print('Number of pages of results to process: ' + str(len(pages)))
+print('Number of pages of results to process: ' + str(runsnum))
 
 # initiate lists of dictionaries for CSV writing
 pubpagerows = []
@@ -60,13 +52,15 @@ pagecounter = 1
 
 # timing for progress counter
 time_start = time.time()
-itemstodo = len(pages)*40
+itemstodo = runsnum*40
 
 # loop through pages, publications, and files
-for page in pages:
+for pagecounter in range(1,runsnum):
+    searchdata['page'] = pagecounter
+    page = GovUkOpenAndParse(pubsurl, searchdata)
     container = page.find('ol', {'class': 'js-document-list document-list'})
     pubs = container.find_all('li', {'class': 'document-row'})
-    print('Page '+ str(pagecounter) + '. ' + 'Total results - on this page: ' + str(len(pubs)))
+    print('Page '+ str(pagecounter) + '. ' + 'Results on this page: ' + str(len(pubs)))
     for i in pubs:
         pubtitle = i.h3.a.contents[0].encode('ascii','ignore')
         # print('Publication page: ' + pubtitle)
@@ -115,7 +109,7 @@ for page in pages:
             pubfilecounter += 1
         pubcounter += 1
         if pubcounter%10==0:
-            print('\nRoughly ' + '{0:.0f}%'.format(pubcounter/float(itemstodo)*100)+' done.\n')
+            print('Roughly ' + '{0:.0f}%'.format(pubcounter/float(itemstodo)*100)+' done. ',)
             time_elapsed = time.time() - time_start
             print('ETA in ' + '{0:.0f}'.format(float(time_elapsed)/float(pubcounter)*itemstodo-time_elapsed) + ' seconds')
     pagecounter +=1

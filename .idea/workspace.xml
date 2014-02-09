@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="126a52d9-ac21-49a7-a264-5af0dccd30f0" name="Default" comment="Minor keyword update">
+    <list default="true" id="126a52d9-ac21-49a7-a264-5af0dccd30f0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scrape_GovUK_pubs.py" afterPath="$PROJECT_DIR$/src/scrape_GovUK_pubs.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -26,22 +26,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="lib_DGUK.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lib_DGUK.py">
+      <file leaf-file-name="scrape_GovUK_pubs.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/scrape_GovUK_pubs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="0" selection-start="2040" selection-end="2040" vertical-scroll-proportion="0.0" vertical-offset="768" max-vertical-offset="1155">
-              <folding />
+            <state line="129" column="30" selection-start="5257" selection-end="5257" vertical-scroll-proportion="0.76744187" vertical-offset="1638" max-vertical-offset="2025">
+              <folding>
+                <element signature="e#28#87#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scrape_GovUK_pubs.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/scrape_GovUK_pubs.py">
+      <file leaf-file-name="lib_DGUK.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lib_DGUK.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="320" selection-end="320" vertical-scroll-proportion="0.33333334" vertical-offset="66" max-vertical-offset="1755">
-              <folding>
-                <element signature="e#28#87#0" expanded="true" />
-              </folding>
+            <state line="69" column="0" selection-start="2040" selection-end="2040" vertical-scroll-proportion="0.0" vertical-offset="1035" max-vertical-offset="1155">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -115,6 +115,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -171,7 +172,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -199,7 +199,7 @@
     <property name="FullScreen" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="SearchEverywhereHistory" value="append" />
+    <property name="SearchEverywhereHistory" value="True&#10;append" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -516,7 +516,11 @@
       <created>1391976475362</created>
       <updated>1391976475362</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added ability to pass keyword from command line">
+      <created>1391977597666</created>
+      <updated>1391977597666</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -548,19 +552,19 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2494043" sideWeight="0.785061" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18903892" sideWeight="0.53493977" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39327484" sideWeight="0.49969825" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39327484" sideWeight="0.49969825" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18903892" sideWeight="0.4626506" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39846322" sideWeight="0.5003018" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27046785" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -578,9 +582,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24980111" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1893397" sideWeight="0.60365856" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21493903" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21493903" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -606,7 +610,8 @@
     <MESSAGE value="Search term update" />
     <MESSAGE value="Bug fix and progress formatting update" />
     <MESSAGE value="Bug fix - unicode now decoded for all fields saved to CSV" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bug fix - unicode now decoded for all fields saved to CSV" />
+    <MESSAGE value="Added ability to pass keyword from command line" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added ability to pass keyword from command line" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -947,6 +952,11 @@
         <state line="304" column="0" selection-start="9844" selection-end="9844" vertical-scroll-proportion="0.33333334" vertical-offset="4161" max-vertical-offset="6915" />
       </provider>
     </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/csv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="153" column="0" selection-start="4922" selection-end="4922" vertical-scroll-proportion="0.33333334" vertical-offset="2061" max-vertical-offset="6750" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/lib_DGUK.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="69" column="0" selection-start="2040" selection-end="2040" vertical-scroll-proportion="0.0" vertical-offset="768" max-vertical-offset="1155">
@@ -954,14 +964,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/csv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="153" column="0" selection-start="4922" selection-end="4922" vertical-scroll-proportion="0.33333334" vertical-offset="2061" max-vertical-offset="6750" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/scrape_GovUK_pubs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="320" selection-end="320" vertical-scroll-proportion="0.33333334" vertical-offset="66" max-vertical-offset="1755">
+        <state line="129" column="30" selection-start="5257" selection-end="5257" vertical-scroll-proportion="0.76744187" vertical-offset="1638" max-vertical-offset="2025">
           <folding>
             <element signature="e#28#87#0" expanded="true" />
           </folding>

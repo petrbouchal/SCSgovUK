@@ -19,7 +19,6 @@ for i in personbits:
     personid = i['id']
     print(personurl + ' ' + personid)
     personurls.append(personurl)
-    print('hello')
 print(len(personurls))
 
 # hello dolly

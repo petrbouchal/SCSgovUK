@@ -21,8 +21,6 @@ for i in personbits:
     personurls.append(personurl)
 print(len(personurls))
 
-# hello dolly
-
 # hello dolly test 2
 
 # for url in personurls:
